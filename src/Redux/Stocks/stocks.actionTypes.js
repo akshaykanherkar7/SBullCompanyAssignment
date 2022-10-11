@@ -1,0 +1,3 @@
+export const GET_STOCKS_REQ = "GET_STOCKS_REQ";
+export const GET_STOCKS_SUCC = "GET_STOCKS_SUCC";
+export const GET_STOCKS_FAIL = "GET_STOCKS_FAIL";
