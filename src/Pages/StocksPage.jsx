@@ -16,6 +16,7 @@ import "./StockPage.css";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getStocksAPI } from "../Redux/Stocks/stocks.action";
+import { Link } from "react-router-dom";
 
 const StocksPage = () => {
   const dispatch = useDispatch();
@@ -87,9 +88,12 @@ const StocksPage = () => {
           </Thead>
           <Tbody data-cy="table-body">
             {Data.length &&
-              Data.map((item) => (
-                <Tr key={item.id}>
-                  <Td>{item.Symbol}</Td>
+              Data.map((item, ind) => (
+                <Tr key={ind}>
+                  <Td>
+                    {" "}
+                    <Link to={`/${item.Symbol}`}>{item.Symbol}</Link>
+                  </Td>
                   <Td>{item.Name}</Td>
                   <Td>{item.Sector}</Td>
                   <Td>{item.Validtill}</Td>

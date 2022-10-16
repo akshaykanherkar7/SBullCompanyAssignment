@@ -8,7 +8,7 @@ const MainRoutes = () => {
     <div>
       <Routes>
         <Route path="/" element={<StocksPage />}></Route>
-        <Route path="/:symbol" element={<QuotesPage />}></Route>
+        <Route path="/:Symbol" element={<QuotesPage />}></Route>
       </Routes>
     </div>
   );

@@ -1,0 +1,3 @@
+export const GET_QUOTES_REQ = "GET_QUOTES_REQ";
+export const GET_QUOTES_SUCC = "GET_QUOTES_SUCC";
+export const GET_QUOTES_FAIL = "GET_QUOTES_FAIL";
